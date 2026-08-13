@@ -1,0 +1,10 @@
+# dsh-qq-channel bundle patch: one host-plane row with safe defaults.
+# 安装后自动加入 profile 层栈。凭据等配置请在 DSH Web 的「设置 → 插件」卡片里填写
+# （密钥字段已标记 secret，界面会脱敏）；也可在本文件改默认值或在 profile 的
+# cordis.patch.yml 里按 id 覆盖。
+- insert:
+    - id: qq-channel
+      name: dsh-qq-channel
+      inject: [webServer]
+      config:
+        enabled: true

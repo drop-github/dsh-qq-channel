@@ -1,0 +1,43 @@
+{
+  "name": "dsh-qq-channel",
+  "version": "0.1.0",
+  "description": "QQ official-bot channel for DeepSeek Harness: drive your dsh agent from QQ (C2C/group chat), with Markdown replies, image/file relay, and on-QQ approval confirmations.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "qq",
+    "qq-bot",
+    "chat",
+    "channel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsh-qq/dsh-qq-channel.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-settings": "^0.1.0-rc.6"
+  }
+}
