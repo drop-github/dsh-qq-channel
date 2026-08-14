@@ -1,6 +1,6 @@
 {
   "name": "dsh-qq-channel",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "QQ official-bot channel for DeepSeek Harness: drive your dsh agent from QQ (C2C/group chat), with Markdown replies, image/file relay, and on-QQ approval confirmations.",
   "type": "module",
   "main": "lib/index.js",
