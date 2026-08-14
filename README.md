@@ -16,6 +16,8 @@ DeepSeek Harness 的 **QQ 官方机器人通道插件**：装进 web profile 后
 
 ## 安装
 
+> 详细图文流程见 [INSTALL.md](./INSTALL.md)（含 QQ 侧申请、openid 获取、常见问题排查）。
+
 ```bash
 # 从 GitHub 安装（推荐，零门槛）
 dsh plugin --profile web add github:drop-github/dsh-qq-channel
