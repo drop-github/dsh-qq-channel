@@ -1,0 +1,872 @@
+[
+ {
+  "date": "2026-03-19",
+  "stations": 2153,
+  "chargers": 4504,
+  "cities": 259,
+  "provinces": 30,
+  "cumulativeStations": 2360,
+  "cumulativeChargers": 5048
+ },
+ {
+  "date": "2026-03-20",
+  "stations": 2200,
+  "chargers": 4612,
+  "cities": 265,
+  "provinces": 30,
+  "cumulativeStations": 2410,
+  "cumulativeChargers": 5158
+ },
+ {
+  "date": "2026-03-21",
+  "stations": 2233,
+  "chargers": 4692,
+  "cities": 268,
+  "provinces": 30,
+  "cumulativeStations": 2443,
+  "cumulativeChargers": 5224
+ },
+ {
+  "date": "2026-03-22",
+  "stations": 2192,
+  "chargers": 4600,
+  "cities": 269,
+  "provinces": 30,
+  "cumulativeStations": 2443,
+  "cumulativeChargers": 5224
+ },
+ {
+  "date": "2026-03-23",
+  "stations": 2263,
+  "chargers": 4774,
+  "cities": 268,
+  "provinces": 30,
+  "cumulativeStations": 2510,
+  "cumulativeChargers": 5366
+ },
+ {
+  "date": "2026-03-24",
+  "stations": 2299,
+  "chargers": 4866,
+  "cities": 268,
+  "provinces": 30,
+  "cumulativeStations": 2543,
+  "cumulativeChargers": 5432
+ },
+ {
+  "date": "2026-03-25",
+  "stations": 2451,
+  "chargers": 5200,
+  "cities": 274,
+  "provinces": 30,
+  "cumulativeStations": 2683,
+  "cumulativeChargers": 5728
+ },
+ {
+  "date": "2026-03-26",
+  "stations": 2449,
+  "chargers": 5176,
+  "cities": 275,
+  "provinces": 30,
+  "cumulativeStations": 2683,
+  "cumulativeChargers": 5728
+ },
+ {
+  "date": "2026-03-27",
+  "stations": 2473,
+  "chargers": 5236,
+  "cities": 279,
+  "provinces": 30,
+  "cumulativeStations": 2699,
+  "cumulativeChargers": 5760
+ },
+ {
+  "date": "2026-03-28",
+  "stations": 2487,
+  "chargers": 5276,
+  "cities": 274,
+  "provinces": 30,
+  "cumulativeStations": 2708,
+  "cumulativeChargers": 5780
+ },
+ {
+  "date": "2026-03-29",
+  "stations": 2590,
+  "chargers": 5518,
+  "cities": 280,
+  "provinces": 30,
+  "cumulativeStations": 2802,
+  "cumulativeChargers": 5980
+ },
+ {
+  "date": "2026-03-30",
+  "stations": 2581,
+  "chargers": 5496,
+  "cities": 283,
+  "provinces": 30,
+  "cumulativeStations": 2802,
+  "cumulativeChargers": 5980
+ },
+ {
+  "date": "2026-03-31",
+  "stations": 2649,
+  "chargers": 5668,
+  "cities": 284,
+  "provinces": 30,
+  "cumulativeStations": 2856,
+  "cumulativeChargers": 6096
+ },
+ {
+  "date": "2026-04-01",
+  "stations": 2713,
+  "chargers": 5822,
+  "cities": 285,
+  "provinces": 30,
+  "cumulativeStations": 2919,
+  "cumulativeChargers": 6236
+ },
+ {
+  "date": "2026-04-02",
+  "stations": 2743,
+  "chargers": 5884,
+  "cities": 284,
+  "provinces": 30,
+  "cumulativeStations": 2943,
+  "cumulativeChargers": 6284
+ },
+ {
+  "date": "2026-04-03",
+  "stations": 3002,
+  "chargers": 6410,
+  "cities": 511,
+  "provinces": 30,
+  "cumulativeStations": 2960,
+  "cumulativeChargers": 6326
+ },
+ {
+  "date": "2026-04-04",
+  "stations": 3031,
+  "chargers": 6516,
+  "cities": 486,
+  "provinces": 30,
+  "cumulativeStations": 3015,
+  "cumulativeChargers": 6484
+ },
+ {
+  "date": "2026-04-05",
+  "stations": 3093,
+  "chargers": 6666,
+  "cities": 488,
+  "provinces": 30,
+  "cumulativeStations": 3087,
+  "cumulativeChargers": 6656
+ },
+ {
+  "date": "2026-04-06",
+  "stations": 3082,
+  "chargers": 6662,
+  "cities": 285,
+  "provinces": 30,
+  "cumulativeStations": 3105,
+  "cumulativeChargers": 6710
+ },
+ {
+  "date": "2026-04-07",
+  "stations": 3087,
+  "chargers": 6676,
+  "cities": 285,
+  "provinces": 30,
+  "cumulativeStations": 3139,
+  "cumulativeChargers": 6784
+ },
+ {
+  "date": "2026-04-08",
+  "stations": 3114,
+  "chargers": 6756,
+  "cities": 286,
+  "provinces": 31,
+  "cumulativeStations": 3201,
+  "cumulativeChargers": 6942
+ },
+ {
+  "date": "2026-04-09",
+  "stations": 3160,
+  "chargers": 6876,
+  "cities": 287,
+  "provinces": 31,
+  "cumulativeStations": 3246,
+  "cumulativeChargers": 7054
+ },
+ {
+  "date": "2026-04-10",
+  "stations": 3157,
+  "chargers": 6868,
+  "cities": 284,
+  "provinces": 31,
+  "cumulativeStations": 3256,
+  "cumulativeChargers": 7076
+ },
+ {
+  "date": "2026-04-11",
+  "stations": 3140,
+  "chargers": 6826,
+  "cities": 284,
+  "provinces": 31,
+  "cumulativeStations": 3265,
+  "cumulativeChargers": 7094
+ },
+ {
+  "date": "2026-04-12",
+  "stations": 3199,
+  "chargers": 6970,
+  "cities": 285,
+  "provinces": 31,
+  "cumulativeStations": 3329,
+  "cumulativeChargers": 7250
+ },
+ {
+  "date": "2026-04-13",
+  "stations": 3202,
+  "chargers": 6978,
+  "cities": 287,
+  "provinces": 31,
+  "cumulativeStations": 3337,
+  "cumulativeChargers": 7268
+ },
+ {
+  "date": "2026-04-14",
+  "stations": 3260,
+  "chargers": 7120,
+  "cities": 289,
+  "provinces": 31,
+  "cumulativeStations": 3393,
+  "cumulativeChargers": 7408
+ },
+ {
+  "date": "2026-04-15",
+  "stations": 3300,
+  "chargers": 7226,
+  "cities": 288,
+  "provinces": 31,
+  "cumulativeStations": 3440,
+  "cumulativeChargers": 7526
+ },
+ {
+  "date": "2026-04-16",
+  "stations": 3325,
+  "chargers": 7294,
+  "cities": 289,
+  "provinces": 31,
+  "cumulativeStations": 3487,
+  "cumulativeChargers": 7642
+ },
+ {
+  "date": "2026-04-17",
+  "stations": 3387,
+  "chargers": 7444,
+  "cities": 292,
+  "provinces": 31,
+  "cumulativeStations": 3539,
+  "cumulativeChargers": 7774
+ },
+ {
+  "date": "2026-04-18",
+  "stations": 3433,
+  "chargers": 7566,
+  "cities": 292,
+  "provinces": 31,
+  "cumulativeStations": 3589,
+  "cumulativeChargers": 7900
+ },
+ {
+  "date": "2026-04-19",
+  "stations": 3435,
+  "chargers": 7580,
+  "cities": 292,
+  "provinces": 31,
+  "cumulativeStations": 3598,
+  "cumulativeChargers": 7928
+ },
+ {
+  "date": "2026-04-20",
+  "stations": 3441,
+  "chargers": 7596,
+  "cities": 292,
+  "provinces": 31,
+  "cumulativeStations": 3604,
+  "cumulativeChargers": 7948
+ },
+ {
+  "date": "2026-04-21",
+  "stations": 3497,
+  "chargers": 7754,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 3662,
+  "cumulativeChargers": 8106
+ },
+ {
+  "date": "2026-04-22",
+  "stations": 3089,
+  "chargers": 6992,
+  "cities": 286,
+  "provinces": 31,
+  "cumulativeStations": 3769,
+  "cumulativeChargers": 8392
+ },
+ {
+  "date": "2026-04-23",
+  "stations": 3507,
+  "chargers": 7852,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 3801,
+  "cumulativeChargers": 8464
+ },
+ {
+  "date": "2026-04-24",
+  "stations": 3682,
+  "chargers": 8208,
+  "cities": 297,
+  "provinces": 31,
+  "cumulativeStations": 3853,
+  "cumulativeChargers": 8588
+ },
+ {
+  "date": "2026-04-25",
+  "stations": 3728,
+  "chargers": 8352,
+  "cities": 295,
+  "provinces": 31,
+  "cumulativeStations": 3909,
+  "cumulativeChargers": 8740
+ },
+ {
+  "date": "2026-04-26",
+  "stations": 3760,
+  "chargers": 8422,
+  "cities": 297,
+  "provinces": 31,
+  "cumulativeStations": 3932,
+  "cumulativeChargers": 8800
+ },
+ {
+  "date": "2026-04-27",
+  "stations": 3779,
+  "chargers": 8466,
+  "cities": 298,
+  "provinces": 31,
+  "cumulativeStations": 3965,
+  "cumulativeChargers": 8882
+ },
+ {
+  "date": "2026-04-28",
+  "stations": 3797,
+  "chargers": 8516,
+  "cities": 297,
+  "provinces": 31,
+  "cumulativeStations": 3993,
+  "cumulativeChargers": 8954
+ },
+ {
+  "date": "2026-04-29",
+  "stations": 3832,
+  "chargers": 8620,
+  "cities": 299,
+  "provinces": 31,
+  "cumulativeStations": 4024,
+  "cumulativeChargers": 9050
+ },
+ {
+  "date": "2026-04-30",
+  "stations": 3950,
+  "chargers": 8968,
+  "cities": 300,
+  "provinces": 31,
+  "cumulativeStations": 4181,
+  "cumulativeChargers": 9474
+ },
+ {
+  "date": "2026-05-01",
+  "stations": 4075,
+  "chargers": 9254,
+  "cities": 300,
+  "provinces": 31,
+  "cumulativeStations": 4282,
+  "cumulativeChargers": 9710
+ },
+ {
+  "date": "2026-05-02",
+  "stations": 4141,
+  "chargers": 9418,
+  "cities": 302,
+  "provinces": 31,
+  "cumulativeStations": 4341,
+  "cumulativeChargers": 9870
+ },
+ {
+  "date": "2026-05-03",
+  "stations": 4190,
+  "chargers": 9576,
+  "cities": 303,
+  "provinces": 31,
+  "cumulativeStations": 4387,
+  "cumulativeChargers": 10016
+ },
+ {
+  "date": "2026-05-04",
+  "stations": 4244,
+  "chargers": 9730,
+  "cities": 302,
+  "provinces": 31,
+  "cumulativeStations": 4445,
+  "cumulativeChargers": 10184
+ },
+ {
+  "date": "2026-05-05",
+  "stations": 4235,
+  "chargers": 9714,
+  "cities": 303,
+  "provinces": 31,
+  "cumulativeStations": 4448,
+  "cumulativeChargers": 10196
+ },
+ {
+  "date": "2026-05-06",
+  "stations": 4229,
+  "chargers": 9694,
+  "cities": 302,
+  "provinces": 31,
+  "cumulativeStations": 4464,
+  "cumulativeChargers": 10234
+ },
+ {
+  "date": "2026-05-07",
+  "stations": 4274,
+  "chargers": 9812,
+  "cities": 302,
+  "provinces": 31,
+  "cumulativeStations": 4500,
+  "cumulativeChargers": 10326
+ },
+ {
+  "date": "2026-05-08",
+  "stations": 3743,
+  "chargers": 8634,
+  "cities": 287,
+  "provinces": 31,
+  "cumulativeStations": 4525,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-05-22",
+  "stations": 3743,
+  "chargers": 8634,
+  "cities": 287,
+  "provinces": 31,
+  "cumulativeStations": 4525,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-06-23",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-06-24",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-06-25",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-06-26",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-06-27",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-06-28",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-01",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-02",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-03",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-04",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-05",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-06",
+  "stations": 3860,
+  "chargers": 8634,
+  "cities": 293,
+  "provinces": 31,
+  "cumulativeStations": 4642,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-08",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-09",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-10",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-12",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-13",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-14",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-15",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-16",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-18",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-19",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-20",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-21",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-25",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-26",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-27",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-07-29",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-01",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-04",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-06",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-07",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-08",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-09",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-11",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-14",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-15",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-16",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-20",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-22",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-23",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-24",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-25",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-26",
+  "stations": 3892,
+  "chargers": 8634,
+  "cities": 294,
+  "provinces": 31,
+  "cumulativeStations": 4674,
+  "cumulativeChargers": 10394
+ },
+ {
+  "date": "2026-08-27",
+  "stations": 4227,
+  "cities": 312,
+  "provinces": 28
+ }
+]
