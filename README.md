@@ -4,15 +4,32 @@ DeepSeek Harness 的 **QQ 官方机器人通道插件**：装进 web profile 后
 
 ## 特性
 
-- 私聊（C2C）+ 群 @消息 → 驱动 DSH 会话（复用 host 的 `/api/session.prompt`，回环直连）
+- 私聊（C2C）+ 群 @消息 → 驱动 DSH 会话（回环直连 host API，**自动适配 DSH 新旧两代 RPC 协议**，见下节）
 - 回复自动转 QQ Markdown（`msg_type 2`）：标题/加粗/列表/引用渲染，代码块与表格转引用样式
 - 长回复按块分切、同 msg_id 递增 msg_seq、msg_id 去重自动降级、Markdown 被拒自动降级纯文本
-- **审批在 QQ 上确认**：收到「🔐 需要审批 #N」后回复 `同意` / `拒绝`（可带编号），经 `/api/respond` 回传
+- **审批在 QQ 上确认**：收到「🔐 需要审批 #N」后回复 `同意` / `拒绝`（可带编号）——旧版协议经 `/api/respond` 回传；新协议下见「版本兼容性」的说明
 - **提问在 QQ 上选择**：回复数字（如 `1`）选定选项
 - **忙时合并**（Hermes 语义）：会话忙时连发的消息并入等待队列，上一轮结束后合并成一轮一并回答，不丢不串
 - **收件箱（用户 → bot 文件）**：你发来的图片/PDF/Word 等附件自动下载到 `$DSH_HOME/storages/qq-channel-inbox/`；模型无视觉能力时自动降级为纯文本并附上收件箱路径，agent 可走 OCR/元数据/文件解析兜底
 - 断线重连、心跳保活、消息事件去重、回复目标落盘（`$DSH_HOME/storages/qq-channel-turn-ctx.json`，10 分钟过期）
 - 配置全部走 **settings 命名空间**：DSH Web 的「设置 → 插件」卡片直接填写（密钥字段自动脱敏），改完即热重载
+
+## 版本兼容性
+
+插件启动时会**自动探测** host 的 RPC 协议版本并选择对应通道，无需配置：
+
+| host 版本 | RPC 协议 | 会话事件来源 | 审批/提问 |
+| --- | --- | --- | --- |
+| DSH ≤ 0.1.1 | `POST /api/session.list`，payload 直传 | WebSocket `/api/events.mux` | ✅ 经 `/api/respond` 在 QQ 内确认 |
+| DSH ≥ 0.1.5 | typert 网关：`POST /api/session/list`，payload 包 `{args:{…}}` | `session/page` 轮询（≈1.5s 延迟） | ⚠️ 暂未支持（走 `remote.mux` 流载体，见下） |
+
+新版 DSH 的两点变化及其应对：
+
+- **`/api` 增加了 browserAuth 鉴权**（无 cookie 一律 401）：插件在 host 进程内通过 `connection.authenticatedUrl()` 取 launch token，换取 Host 绑定的 cookie，401 时自动重认证。
+- **`events.mux` 已移除，流式方法（`session/follow`、`session/control`）必须走 `/api/remote.mux` 流载体**：插件改用 `session/page` 轮询拉取会话事件（含基线防重放、游标自动学习、多会话覆盖）。代价是回复推送约 1.5 秒延迟，且**审批/提问（control 流）暂时收不到** —— 遇到审批请到电脑端 Web GUI 处理。
+
+> 兼容性目标：新老 host 上都能正常工作。若 host 升级后插件异常，先看 `$DSH_HOME/storages/qq-channel.log`：里面会打印协议探测、鉴权、事件流模式等关键节点。
+
 
 ## 安装
 
