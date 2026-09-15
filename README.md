@@ -21,12 +21,15 @@ DeepSeek Harness 的 **QQ 官方机器人通道插件**：装进 web profile 后
 | host 版本 | RPC 协议 | 会话事件来源 | 审批/提问 |
 | --- | --- | --- | --- |
 | DSH ≤ 0.1.1 | `POST /api/session.list`，payload 直传 | WebSocket `/api/events.mux` | ✅ 经 `/api/respond` 在 QQ 内确认 |
-| DSH ≥ 0.1.5 | typert 网关：`POST /api/session/list`，payload 包 `{args:{…}}` | `session/page` 轮询（≈1.5s 延迟） | ⚠️ 暂未支持（走 `remote.mux` 流载体，见下） |
+| DSH ≥ 0.1.5 | typert 网关：`POST /api/session/list`，payload 包 `{args:{…}}` | `session/page` 轮询（≈1.5s 延迟） | ✅ 经 `$events` 流 + `POST /api/$events/result` 在 QQ 内确认 |
 
-新版 DSH 的两点变化及其应对：
+新版 DSH 的三点变化及其应对：
 
 - **`/api` 增加了 browserAuth 鉴权**（无 cookie 一律 401）：插件在 host 进程内通过 `connection.authenticatedUrl()` 取 launch token，换取 Host 绑定的 cookie，401 时自动重认证。
-- **`events.mux` 已移除，流式方法（`session/follow`、`session/control`）必须走 `/api/remote.mux` 流载体**：插件改用 `session/page` 轮询拉取会话事件（含基线防重放、游标自动学习、多会话覆盖）。代价是回复推送约 1.5 秒延迟，且**审批/提问（control 流）暂时收不到** —— 遇到审批请到电脑端 Web GUI 处理。
+- **`events.mux` 已移除，流式方法（`session/follow`、`session/control`）必须走 `/api/remote.mux` 流载体**：会话事件改用 `session/page` 轮询拉取（含基线防重放、游标自动学习、多会话覆盖），代价是回复推送约 1.5 秒延迟。
+- **审批/提问改走 Gateway 内部流 `$events`**（普通 HTTP 调不了流式方法）：插件经 `remote.mux` 开 `$events` 流接收审批/提问请求，结果经 `POST /api/$events/result` 回传。事件名也从 `approval/requested` → `approval/request`、`question/requested` → `user-questions/request`（插件内部已映射，QQ 侧的键盘按钮与编号回复体验不变）。
+
+> 端到端实测（v1.1.0）：越权操作 → 沙箱拒绝 → 提权重试 → host 产生审批 → `$events` 流 → QQ 收到「🔐 需要审批」→ 点「同意」→ 结果回传 → 命令执行，全链路约 5 秒。
 
 > 兼容性目标：新老 host 上都能正常工作。若 host 升级后插件异常，先看 `$DSH_HOME/storages/qq-channel.log`：里面会打印协议探测、鉴权、事件流模式等关键节点。
 
