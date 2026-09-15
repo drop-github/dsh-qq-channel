@@ -110,3 +110,11 @@ MIT
 把任意文件放进 **`$DSH_HOME/storages/qq-channel-outbox/`**（即 `C:\Users\<你>\.dsh\storages\qq-channel-outbox`），插件每 5 秒扫描一次，自动分片上传并发送到 owner 私聊：
 - 图片（jpg/png/gif/webp）、mp4、silk 按媒体类型发送，其余按文件（file_type 4）；
 - 成功 → 移入 `sent/`；失败 → 移入 `failed/`（日志区分 40093002 日限额 / 40093001 可重试）。
+
+## 维护注意（踩过的坑）
+
+- **改 `package.json` / 任何 `.json` 时严禁写入 UTF-8 BOM**：DSH 启动时会 `JSON.parse` 该文件，带 BOM 会直接抛错并让 profile 加载失败 → **整个 DSH 起不来**（`dsh-stderr.log` 里表现为 `Unexpected token '﻿'`）。
+  - Windows PowerShell 5.1 的 `Set-Content -Encoding UTF8` **会写 BOM**，禁止用于本仓库的 JSON/YAML；
+  - 请改用 `-Encoding utf8NoBOM`（PowerShell 7+）、`[IO.File]::WriteAllText($p, $s, (New-Object Text.UTF8Encoding $false))`，或直接用编辑器/agent 的写文件工具（默认无 BOM）。
+  - 自检：`[IO.File]::ReadAllBytes($p)[0..2]` 不应为 `EF BB BF`。
+- **审批/提问消息发出后需要 `message_id`**：用户答复时要撤回原消息（否则另一个按钮仍可点），发送路径通过 `sendText(..., { onSent })` 回调回收 id。
